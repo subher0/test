@@ -18,7 +18,7 @@ public class Performance {
         + "######################");
     ClassLoader classLoader = getClass().getClassLoader();
     try (Scanner scanner = new Scanner(
-        Paths.get(classLoader.getResource("test_cases.txt").getFile()))) {
+        Paths.get(classLoader.getResource("test_cases.txt").toURI()))) {
       while (scanner.hasNext()) {
         String encoded = scanner.nextLine();
 
