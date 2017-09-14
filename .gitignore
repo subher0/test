@@ -1,6 +1,4 @@
 .idea
 build
 target
-gradlew.bat
-gradlew
 *.jar
